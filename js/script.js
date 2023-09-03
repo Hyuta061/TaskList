@@ -1,6 +1,6 @@
 function main(){
-
   function addTask(text){
+    const taskTitle = document.querySelector('#task-title')
 
  // titulo da tarefa ( input)
     if(text){
@@ -28,7 +28,7 @@ function main(){
         doneTask(this);
       })
 
-      text = ''; // zera o valor o meu input 
+      taskTitle.value = ''; // zera o valor o meu input 
 
       salvarTasks();
     }
